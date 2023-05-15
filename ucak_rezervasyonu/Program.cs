@@ -48,7 +48,7 @@ namespace ucak_rezervasyonu
             rezervasyon0.Lokasyon = (lokasyon0.Ulke + " " + lokasyon0.Sehir);
             Console.WriteLine("Lokasyon:" + rezervasyon0.Lokasyon);
             rezervasyon0.Müsteri = musteri0.adSoyad;
-            Console.WriteLine("AD SOYAD:" + rezervasyon0.Lokasyon);
+            Console.WriteLine("AD SOYAD:" + rezervasyon0.Müsteri);
             rezervasyon0.TarihVeSaat = TarihveSaat1;
             Console.WriteLine("Tarih:" + rezervasyon0.TarihVeSaat);
             rezervasyon0.bosKoltuk = ucak0.kacKisilik - rezervasyon0.doluKoltuk;
