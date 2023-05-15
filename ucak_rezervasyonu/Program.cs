@@ -44,6 +44,9 @@ namespace ucak_rezervasyonu
 
 
             rezervasyon rezervasyon0 = new rezervasyon();
+            Console.WriteLine("koltuk numarası seçiniz\nKoltuk numaraları: 'f1-150,j1-150");
+            Console.WriteLine("Koltuk no seçin: ");
+            rezervasyon0.KoltukNo = Console.ReadLine();
             rezervasyon0.doluKoltuk = 150;
             rezervasyon0.Lokasyon = (lokasyon0.Ulke + " " + lokasyon0.Sehir);
             Console.WriteLine("Lokasyon:" + rezervasyon0.Lokasyon);
@@ -51,11 +54,8 @@ namespace ucak_rezervasyonu
             Console.WriteLine("AD SOYAD:" + rezervasyon0.Müsteri);
             rezervasyon0.TarihVeSaat = TarihveSaat1;
             Console.WriteLine("Tarih:" + rezervasyon0.TarihVeSaat);
-            rezervasyon0.bosKoltuk = ucak0.kacKisilik - rezervasyon0.doluKoltuk;
-            Console.WriteLine("Boş koltuk sayısı:" + rezervasyon0.bosKoltuk);
-            Console.WriteLine("koltuk numarası seçiniz\nKoltuk numaraları: 'f1-150,j1-150");
-            rezervasyon0.KoltukNo = (Console.ReadLine());
             Console.WriteLine("seçilen koltuk no:" + rezervasyon0.KoltukNo);
+            rezervasyon0.KoltukNo = (Console.ReadLine());
             rezervasyon0.Acik = 'A';
             rezervasyon0.Kapali = 'K';
 
